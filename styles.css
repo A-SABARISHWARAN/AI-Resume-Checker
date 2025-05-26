@@ -1,0 +1,241 @@
+/* Reset and base */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #dbeafe, #f2f6fc);
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Hero Section */
+.hero-section {
+  background: url("assets/bg.jpg") no-repeat center center/cover;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.3);
+  /* Add subtle overlay shadow */
+}
+
+/* Dark overlay with blur */
+.overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  padding: 50px 60px;
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(6px);
+  max-width: 80%;
+  font-family: 'Montserrat', sans-serif; /* Added font */
+}
+
+.overlay h1 {
+  font-size: 56px;
+  margin-bottom: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+}
+
+.overlay p {
+  font-size: 22px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  color: #cfd8fc;
+}
+
+/* Container */
+.container {
+  max-width: 650px;
+  margin: 50px auto;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 40px 35px;
+  border-radius: 25px;
+  box-shadow: 0 15px 40px rgba(37, 117, 252, 0.3);
+  font-family: 'Open Sans', sans-serif;
+  border: 2px solid #2575fc;
+  transition: transform 0.3s ease;
+}
+
+.container:hover {
+  transform: translateY(-10px);
+}
+
+/* Hero Image */
+.hero-img {
+  width: 500px;
+  max-width: 100%;
+  display: block;
+  margin: 0 auto 30px;
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(37, 117, 252, 0.25);
+  transition: transform 0.4s ease;
+}
+
+.hero-img:hover {
+  transform: scale(1.05);
+}
+
+/* Form Styles */
+form label {
+  font-weight: 700;
+  margin-top: 25px;
+  display: block;
+  color: #2575fc;
+  font-size: 18px;
+}
+
+textarea, input[type="file"] {
+  width: 100%;
+  padding: 14px 18px;
+  border-radius: 12px;
+  border: 2px solid #a3bffa;
+  margin-top: 10px;
+  font-size: 17px;
+  resize: vertical;
+  font-family: 'Open Sans', sans-serif;
+  transition: border-color 0.3s ease;
+}
+
+textarea:focus, input[type="file"]:focus {
+  border-color: #2575fc;
+  outline: none;
+  box-shadow: 0 0 8px #2575fcaa;
+}
+
+/* Buttons */
+button {
+  margin-top: 30px;
+  padding: 16px;
+  width: 100%;
+  background-color: #2575fc;
+  color: #fff;
+  font-weight: 700;
+  font-size: 20px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  font-family: 'Montserrat', sans-serif;
+  box-shadow: 0 6px 15px rgba(37, 117, 252, 0.6);
+}
+
+button:hover {
+  background-color: #1a5ee4;
+  box-shadow: 0 10px 25px rgba(26, 94, 228, 0.8);
+}
+
+/* Result Box */
+.result {
+  margin-top: 35px;
+  background: linear-gradient(145deg, #e7f1ff, #d0e4ff);
+  padding: 25px;
+  border-radius: 15px;
+  text-align: center;
+  border: 1.5px solid #b3d4fc;
+  font-family: 'Open Sans', sans-serif;
+  box-shadow: 0 4px 20px rgba(37, 117, 252, 0.15);
+  color: #004182;
+}
+
+.result h3 {
+  margin-bottom: 15px;
+  font-size: 26px;
+  font-weight: 600;
+}
+
+/* Hidden class */
+.hidden {
+  display: none;
+}
+
+/* Info Section */
+.info-section {
+  background: #ffffff;
+  padding: 60px 30px;
+  text-align: center;
+  box-shadow: 0 5px 35px rgba(37, 117, 252, 0.15);
+  border-radius: 25px;
+  margin: 40px auto;
+  max-width: 700px;
+  font-family: 'Open Sans', sans-serif;
+  color: #444;
+}
+
+.info-section h2 {
+  font-size: 36px;
+  margin-bottom: 25px;
+  font-weight: 700;
+  color: #2575fc;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.info-section ul {
+  list-style: none;
+  padding: 0;
+  font-size: 20px;
+  line-height: 1.8;
+}
+
+.info-section li {
+  margin-bottom: 16px;
+  position: relative;
+  padding-left: 25px;
+}
+
+.info-section li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: #2575fc;
+  font-weight: 700;
+}
+
+/* Footer */
+footer {
+  background: #2575fc;
+  color: white;
+  text-align: center;
+  padding: 18px;
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 1.2px;
+  box-shadow: 0 -3px 10px rgba(37, 117, 252, 0.5);
+  user-select: none;
+}
+
+/* Additional visual ideas for images */
+/* Suggestion: Add small decorative icons or SVGs in .info-section or near buttons */
+/* Example: Place small floating shapes with subtle animation in the hero-section background */
+/* You can add this in your HTML or via CSS with pseudo-elements and animations */
+
+/* Responsive improvements */
+@media (max-width: 768px) {
+  .overlay h1 {
+    font-size: 36px;
+  }
+  .overlay p {
+    font-size: 16px;
+  }
+  .container {
+    padding: 30px 25px;
+  }
+  .info-section h2 {
+    font-size: 28px;
+  }
+  .info-section ul {
+    font-size: 16px;
+  }
+  button {
+    font-size: 16px;
+    padding: 14px;
+  }
+}

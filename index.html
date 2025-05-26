@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AI Resume Screener</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="assets/favicon.ico" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header class="hero-section">
+    <div class="overlay">
+      <h1>AI Resume Screener</h1>
+      <p>Get instant insights on how well your resume fits a job role</p>
+    </div>
+  </header>
+
+  <section class="form-section">
+    <div class="container">
+      <img src="Resume.svg" class="hero-img" alt="Resume Icon" width="1000" height="300"/>
+      <h2>Upload Resume & Job Description</h2>
+      <form id="resumeForm">
+        <label for="jobDesc">Job Description</label>
+        <textarea id="jobDesc" placeholder="Paste the job description here..." required></textarea>
+
+        <label for="resumeFile">Upload Resume (PDF/Image)</label>
+        <input type="file" id="resumeFile" accept=".pdf,.jpg,.jpeg,.png" required />
+
+        <button type="submit">Submit</button>
+      </form>
+
+      <div id="result" class="result hidden">
+        <h3>Candidate Fit Score</h3>
+        <div id="scoreValue">Calculating...</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="info-section">
+    <h2>How It Works</h2>
+    <ul>
+      <li>📄 Upload your resume in PDF or image format</li>
+      <li>📝 Paste the job description of your target role</li>
+      <li>🤖 Our AI analyzes keywords, skills & experience match</li>
+      <li>📊 Get an instant Fit Score out of 100</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 AI Resume Screener | Built with ❤️ by A. Sabarishwaran</p>
+  </footer>
+
+  <script src="index.js"></script>
+</body>
+</html>
